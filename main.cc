@@ -16,12 +16,10 @@ int main(int, char **)
 		w.main_loop();
 
 	} catch (const std::exception &e) {
-		std::cerr << "Во время выполнения программы произошла ошибка: "
-				<< std::endl << e.what() << std::endl;
+		std::cerr << "" << std::endl << e.what() << std::endl;
 		return 1;
 	} catch (...) {
-		std::cerr << "Во время выполнения программы произошла "
-				"неизвестная ошибка!" << std::endl;
+		std::cerr << "" << std::endl;
 		return 1;
 	}
 
